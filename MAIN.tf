@@ -20,13 +20,12 @@ module "eks" {
   cluster_endpoint_public_access  = true
   enable_cluster_creator_admin_permissions = true 
 
-  eks_managed_node_groups = {
+    eks_managed_node_groups = {
     main = {
       name         = "${var.common_tags.owner}-eks-node"
-      desired_size = 1
-      max_size     = 1
-      min_size     = 1
-
+      desired_size = 2
+      max_size     = 2
+      min_size     = 2
       instance_types = [var.node_type]
     }
   }

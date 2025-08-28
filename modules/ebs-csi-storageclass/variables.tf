@@ -1,9 +1,14 @@
 variable "host" {
-   type = string
+  description = "EKS cluster endpoint"
+  type        = string
 }
+
 variable "cluster_ca_certificate" {
-   type = string
+  description = "EKS cluster CA data"
+  type        = string
 }
+
 variable "token" {
-   type = string
-}  
+  description = "Auth token for the EKS cluster"
+  type        = string
+}
