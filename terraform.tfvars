@@ -1,6 +1,6 @@
 # General
 common_tags = {
-    owner           = "alon"
+    owner           = "along"
     managedBy       = "terraform"
     usage           = "training"
     app_name        = "alonApp"
